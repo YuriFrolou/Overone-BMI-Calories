@@ -1,0 +1,25 @@
+.workspace {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  font-size: 22px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  &__form {
+    width: 100%;
+    margin: 20px auto;
+  }
+  &__results {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-style: italic;
+    color: firebrick;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS</title>
+</head>
+<body>
+    <div class="outer">
+        <h1 class="main-heading">Нутритивный статус</h1>
+        <div class="workspace">
+            <form action="#" class="workspace__form form">
+                <label for="age" class="form__label">Укажите ваш возраст (г)</label>
+                <input type="number" name="age" id="age" class="form__input form__input_common" placeholder="18-100" min="18" max="100" required>
+                <label for="height" class="form__label">Укажите ваш рост (см)</label>
+                <input type="number" name="height" id="height" class="form__input form__input_common" placeholder="120-260" min="120" max="260" required>
+                <label for="weight" class="form__label">Укажите ваш вес (кг)</label>
+                <input type="number" name="weight" id="weight" class="form__input form__input_common" placeholder="30-400" min="30" max="400" required>
+                <fieldset  class="form__fieldset">
+                    <legend>Укажите ваш пол</legend>
+                   <label class="form__label form__label_radio"><span>Женский</span> <input type="radio" name="gender"  class="form__input radio radio_gender" id="female" value="female" required></label>
+                   
+                   <label class="form__label form__label_radio"><span>Мужской</span> <input type="radio" name="gender" class="form__input radio radio_gender" id="male" value="male"></label>
+                </fieldset>
+
+                <fieldset  class="form__fieldset">
+                    <legend>Выберите свой уровень активности</legend>
+                    <label class="form__label form__label_radio"><span>1.2-минимальный </span><input type="radio" name="activity" value="1.2" class="form__input radio radio_activity" required></label>
+                    <label class="form__label form__label_radio"><span>1.375-низкий </span><input type="radio" name="activity" value="1.375" class="form__input radio radio_activity"></label>
+                    <label class="form__label form__label_radio"><span>1.55-умеренный</span> <input type="radio" name="activity" value="1.55" class="form__input radio radio_activity"></label>
+                    <label class="form__label form__label_radio"><span>1.725-высокий</span> <input type="radio" name="activity" value="1.725" class="form__input radio radio_activity"></label>
+                    <label class="form__label form__label_radio"><span>1.9-экстремальный</span> <input type="radio" name="activity" value="1.9" class="form__input radio radio_activity"></label>
+                </fieldset>
+            <button type="submit" class="form__btn">Отправить</button>
+            </form>
+            <div class="workspace__results results"></div>
+        </div>
+    </div>
+    <script src="./js/functions.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

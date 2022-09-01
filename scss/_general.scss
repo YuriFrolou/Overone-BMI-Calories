@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  @include set-background-body-grad-color;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+.outer {
+  position: relative;
+}
+
+.main-heading {
+  text-align: center;
+  color: brown;
+  @include small-screen {
+    font-size: 24px;
+  }
+}
+.result-calories {
+  margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}

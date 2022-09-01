@@ -1,0 +1,55 @@
+@mixin md-device {
+  @media (max-width: $md-device-max-size) {
+    @content;
+  }
+}
+
+@mixin sm-device {
+  @media (max-width: $sm-device-max-size) {
+    @content;
+  }
+}
+
+@mixin xs-device {
+  @media (max-width: $xs-device-max-size) {
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media (max-width: $small-screen-max-size) {
+    @content;
+  }
+}
+
+@mixin ext-small-screen {
+  @media (max-width: $ext-small-screen-max-size) {
+    @content;
+  }
+}
+
+@mixin set-background-grad-color() {
+  background: #2f1971;
+  background: -webkit-linear-gradient(top left, #2f1971, #ebba63);
+  background: -moz-linear-gradient(top left, #2f1971, #ebba63);
+  background: linear-gradient(to bottom right, #2f1971, #ebba63);
+}
+
+@mixin set-background-body-grad-color() {
+  background: rgba(47, 25, 113, 0.3);
+  background: -webkit-linear-gradient(
+    top left,
+    rgba(47, 25, 113, 0.3),
+    rgba(235, 186, 99, 0.3)
+  );
+  background: -moz-linear-gradient(
+    top left,
+    rgba(47, 25, 113, 0.3),
+    rgba(235, 186, 99, 0.3)
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgba(47, 25, 113, 0.3),
+    rgba(235, 186, 99, 0.3)
+  );
+}

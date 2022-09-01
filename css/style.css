@@ -449,8 +449,8 @@ input[type=number]:focus {
       align-self: flex-start;
 }
 .form__label_radio {
-  width: 90%;
-  max-width: 250px;
+  width: 100%;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
